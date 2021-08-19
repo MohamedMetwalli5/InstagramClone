@@ -27,7 +27,7 @@ class ProfilesController extends Controller
         ]);
 
         // dd($data);
-        $user->profile->update($data);
+        auth()->user()->profile->update($data); // an extra layer of protection
 
         return redirect("/profile/{$user->id}");
 
