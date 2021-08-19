@@ -11,6 +11,7 @@
             <div class="d-flex justify-content-between align-items-baseline">
                 <h1>{{ $user->username }}</h1>
                 <a href="/p/create">Post</a>
+                <a href="/profile/{{ $user->id }}/edit">Edit Profile</a>
             </div>
             <div class="d-flex">
                 <div class="pr-5"><strong>{{ $user->posts->count() }}</strong> posts</div>
